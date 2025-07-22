@@ -1,0 +1,286 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff7f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-style: italic;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Mobile toggle (for future) */
+.menu-toggle {
+    display: none;
+}
+
+/* Row and Columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.col, .q {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+}
+
+#p {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Headings with custom fonts */
+.pr {
+    color: #ff7f50;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.pr1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444;
+}
+
+#o {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Why Choose Us Section */
+.q img#w {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.r {
+    font-size: 1.5rem;
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+/* Testimonials marquee */
+marquee img {
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Menu page styles */
+.food-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    width: 230px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-card h3 {
+    color: #ff7f50;
+    margin: 10px 0 5px;
+}
+
+.food-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Contact Page */
+.contact-section {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff3eb;
+    border-radius: 12px;
+}
+
+.contact-section h2 {
+    color: #ff7f50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-section label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.contact-section button {
+    margin-top: 15px;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #e76d3c;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Recipe Page */
+.recipe-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff3eb;
+    border-radius: 12px;
+}
+
+.recipe-section h2, .recipe-section h3 {
+    color: #ff7f50;
+    margin-top: 20px;
+}
+
+.recipe-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.recipe-section ul, .recipe-section ol {
+    margin: 10px 0 20px 20px;
+}
+
+.recipe-section li {
+    margin-bottom: 8px;
+}
